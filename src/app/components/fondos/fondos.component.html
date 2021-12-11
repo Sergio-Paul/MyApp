@@ -1,0 +1,21 @@
+
+<div class="fondos">
+  <img  id="fonddos" src="../../../assets/borde.png" alt="">
+  <br>
+    <div>
+        <img id="sem"src="../../../assets/1.png" alt=""><h5 id="for">_Forecast</h5>
+    </div>
+    <div *ngIf="weather" id="info">
+      <h1 class="h4">Weather Information</h1>
+      <p>Ciudad: {{weather.name}}</p>
+      <p>Latitud: {{weather.coord.lat}}</p>
+      <p>Longitud: {{weather.coord.lon}}</p>
+      <p>Humedad: {{weather.main.humidity}}</p>
+      <p>Presion: {{weather.main.pressure}}</p>
+      <p>temperatura Minima: {{weather.main.temp_min}} °C</p>
+      <p>temperatura Maxima: {{weather.main.temp_max}} °C</p>
+      <p>Descripcion: {{weather.weather[0].description }}</p>
+    </div>
+    <br>
+    <br>
+</div>
